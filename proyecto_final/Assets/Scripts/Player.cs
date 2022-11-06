@@ -23,9 +23,9 @@ public class Player : MonoBehaviour
 
       transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movementDirection),rotationSpeed*Time.deltaTime);
       
-     pitch -= speedV * Input.GetAxis("Mouse Y");
+     //pitch -= speedV * Input.GetAxis("Mouse Y");
 
-     transform.eulerAngles = new Vector3(pitch, 0.0f , 0.0f);
+     //transform.eulerAngles = new Vector3(pitch, 0.0f , 0.0f);
     }
 
 }
