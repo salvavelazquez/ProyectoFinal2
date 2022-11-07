@@ -11,10 +11,10 @@ public class CameraOrbit : MonoBehaviour
     public Vector2 sensitivity;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-    }
+    //void Start()
+    //{
+    //    Cursor.lockState = CursorLockMode.Locked;
+    //}
 
     void Update()
     {
