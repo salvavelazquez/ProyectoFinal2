@@ -7,6 +7,7 @@ public class EnemyBullet : MonoBehaviour
 {
     [SerializeField]
     private float velocidadXAleatoria;
+    //private float daño = 10;
 
     void Start()
     {
@@ -19,11 +20,13 @@ public class EnemyBullet : MonoBehaviour
         transform.Translate(velocidadXAleatoria * Time.deltaTime, 0, 0);
     }
 
-    private void OnCollisionEnter(Collision collision)
+     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        VidaPlayer dañovida = GameObject.Find("Player").GetComponent<VidaPlayer>();
+        if(collision.gameObject.CompareTag("EnemyBullet"))
         {
-            Destroy(gameObject);
+            dañovida.vida--;
         }
     }
+    
 }

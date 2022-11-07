@@ -12,12 +12,12 @@ public class WeaponController : MonoBehaviour
     public float FireRange = 200;
     public float force = 4;
 
-    private Transform cameraPlayerTransform;
+    public Transform cameraPlayerTransform;
 
-    private void Start()
-    {
-        cameraPlayerTransform = GameObject.FindGameObjectWithTag("MainCamera").transform;
-    }
+    //private void Start()
+    //{
+        //cameraPlayerTransform = GameObject.FindGameObjectWithTag("MainCamera").transform;
+    //}
 
     private void Update()
     {
