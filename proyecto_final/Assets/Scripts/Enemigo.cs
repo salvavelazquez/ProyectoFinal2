@@ -6,8 +6,6 @@ public class Enemigo : MonoBehaviour
 {
     [SerializeField]
     private float vida;
-    [SerializeField]
-    private GameObject efectoMuerte;
 
 
     public void TomarDanio(float danio)
