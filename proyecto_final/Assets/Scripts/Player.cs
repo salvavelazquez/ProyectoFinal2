@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
@@ -9,7 +10,13 @@ public class Player : MonoBehaviour
     float speed = 3f;
     float rotationSpeed = 5f;
     float pitch;
-    
+    public Canvas ganaste;
+
+
+    private void Start()
+    {
+        ganaste.gameObject.SetActive(false);
+    }
     void Update()
     {
 
@@ -28,4 +35,11 @@ public class Player : MonoBehaviour
      //transform.eulerAngles = new Vector3(pitch, 0.0f , 0.0f);
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Premio")
+        {
+            ganaste.gameObject.SetActive(true);
+        }
+    }
 }
