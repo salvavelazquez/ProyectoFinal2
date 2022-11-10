@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class GameOverManager : MonoBehaviour
 {
     public GameObject GameOver;
+    //hace que el script game over sea un script static y este fuera de la escena 
     public static GameOverManager gameOverManager;
     // Start is called before the first frame update
     void Start()
