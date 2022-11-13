@@ -15,7 +15,6 @@ public class Rutina : MonoBehaviour
     {
         target = GameObject.Find("Player");
     }
-    
     public void Comportamiento_Enemigo()
     {
       if (Vector3.Distance(transform.position, target.transform.position) > 10) //Rango de vision
