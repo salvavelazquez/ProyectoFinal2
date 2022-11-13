@@ -21,11 +21,12 @@ public class DañoYvida : MonoBehaviour
     {
         if(other.tag=="Player")
         {
+            //el delta time para que el daño sea en segundos y no en cuadro a cuadro y regule el tiempo
             currentDamageTime += Time.deltaTime;
             //si sucede la col empieza el conteo hasta llegar al tiempo del damagetime
             if (currentDamageTime > damageTime)
             {
-                //aumenta la vida del player y resetea el damage time
+                //si es positivo aumenta la vida del player y si negativo resta la vida; y resetea el damage time
                 playerVida.vida += cantidad;
                 currentDamageTime = 0.0f;
             }
