@@ -11,7 +11,7 @@ public class CameraMove : MonoBehaviour
 
     void Start()
     {
-        target = GameObject.Find("NewPlayer").transform; 
+        target = GameObject.Find("Player").transform; 
     }
 
     //Se ejecuta al final de todo
