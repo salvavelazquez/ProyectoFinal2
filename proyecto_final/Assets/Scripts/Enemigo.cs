@@ -9,7 +9,7 @@ public class Enemigo : MonoBehaviour
 
 
     public void TomarDanio(float danio)
-    {
+    { // un if para que cuando la vida del enemigo llegue a 0 se active la funcion Muerte
         vida -= danio;
         if(vida <= 0)
         {
@@ -20,6 +20,6 @@ public class Enemigo : MonoBehaviour
        public void Muerte()
     {
         //Instantiate(efectoMuerte, transform.position, Quaternion.identity);
-        Destroy(gameObject,2f);
+        Destroy(gameObject,2f); // destruye el enemigo
     }
 }
