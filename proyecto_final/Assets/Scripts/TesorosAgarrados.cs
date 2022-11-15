@@ -22,7 +22,7 @@ public class TesorosAgarrados : MonoBehaviour
     private void Update() 
    {
         textoTesoros.text = "Tesoros: " + tesoros.ToString() + "/5";
-        if (tesoros ==5 && activo ==true)
+        if (tesoros == 5 && activo ==true)
         {
           Submarino.transform.Translate(0, speed * Time.deltaTime,0);
             if (estado)

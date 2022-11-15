@@ -20,6 +20,6 @@ public class Enemigo : MonoBehaviour
        public void Muerte()
     {
         //Instantiate(efectoMuerte, transform.position, Quaternion.identity);
-        Destroy(gameObject,2f); // destruye el enemigo
+        Destroy(gameObject,1f); // destruye el enemigo
     }
 }

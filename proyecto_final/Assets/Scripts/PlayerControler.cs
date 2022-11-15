@@ -19,6 +19,7 @@ public class PlayerControler : MonoBehaviour
     private Vector3 camRight;
 
     public Canvas ganaste;
+    public GameObject submarino;
 
     void Start()
     {
@@ -83,6 +84,7 @@ public class PlayerControler : MonoBehaviour
     {
         if (other.gameObject.tag == "Premio")
         {
+            submarino.SetActive(true);
             ganaste.gameObject.SetActive(true);
         }
     }

@@ -40,7 +40,7 @@ public class WeaponController : MonoBehaviour
             if(Physics.Raycast(cameraPlayerTransform.position, cameraPlayerTransform.forward, out hit, FireRange, hittableLayers))
             {
                 GameObject bulletHoleClone = Instantiate(bulletHolePrefab, hit.point + hit.normal * 0.001f, Quaternion.LookRotation(hit.normal));
-                    Destroy(bulletHoleClone, 4f);
+                    Destroy(bulletHoleClone, 1f);
                 if (hit.transform.CompareTag("Enemigo"))
                 {
                     

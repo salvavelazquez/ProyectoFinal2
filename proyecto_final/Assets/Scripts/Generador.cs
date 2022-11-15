@@ -21,7 +21,7 @@ public class Generador : MonoBehaviour
     public void Contador()
     {
         contadorEnemigo++;
-        if (contadorEnemigo == 15)//cantidad maxima para generar enemigos
+        if (contadorEnemigo == 6)//cantidad maxima para generar enemigos
 
         {
             CancelInvoke("GenerateEnemy");
