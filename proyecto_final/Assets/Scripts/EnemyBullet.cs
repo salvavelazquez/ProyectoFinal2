@@ -7,7 +7,7 @@ public class EnemyBullet : MonoBehaviour
 {
     [SerializeField]
     private float velocidadXAleatoria;
-    //private float daño = 10;
+    private float daño = 3;
 
     void Start()
     {
@@ -23,9 +23,10 @@ public class EnemyBullet : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         VidaPlayer dañovida = GameObject.Find("Player").GetComponent<VidaPlayer>(); // se crea un componente "dañovida" para poder hacer daño al jugador.
-        if (collision.gameObject.CompareTag("EnemyBullet")) // un if para cuando se detecte la colisión 
+        if (collision.gameObject.CompareTag("Player")) // un if para cuando se detecte la colisión 
         {
-            dañovida.vida--; // cuando detecta la colision la vida del jugador será reducida
+            dañovida.vida =- daño ; // cuando detecta la colision la vida del jugador será reducida
+            Destroy(gameObject); // destruye el objeto
         }
     }
     

@@ -1006,6 +1006,7 @@ GameObject:
   - component: {fileID: 7870888977386624906}
   - component: {fileID: 8457476486226045905}
   - component: {fileID: 3682307117057343512}
+  - component: {fileID: -4020699444736795236}
   m_Layer: 0
   m_Name: SpiderMelee
   m_TagString: Enemigo
@@ -1102,10 +1103,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rutina: 0
-  cronometro: 0
+  tiempo: 0
   angulo: {x: 0, y: 0, z: 0, w: 0}
   grado: 0
   target: {fileID: 0}
+--- !u!114 &-4020699444736795236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7870888977386624901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a72fa9027cec02479f1a8284d7ae65c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cantidad: -30
+  damageTime: 0.5
 --- !u!1 &7870888977388573098
 GameObject:
   m_ObjectHideFlags: 0

@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 10bbe15435235fb4aaf7bf3274bfee1f, type: 2}
 --- !u!1 &4451672
 GameObject:
   m_ObjectHideFlags: 0
@@ -3251,7 +3251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1281063152180352359, guid: fc5d881f5f67aa447ba7bddd3219678d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 89.9
+      value: 91.72
       objectReference: {fileID: 0}
     - target: {fileID: 1281063152180352359, guid: fc5d881f5f67aa447ba7bddd3219678d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3259,7 +3259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1281063152180352359, guid: fc5d881f5f67aa447ba7bddd3219678d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -18.934
+      value: -22.08
       objectReference: {fileID: 0}
     - target: {fileID: 1281063152180352359, guid: fc5d881f5f67aa447ba7bddd3219678d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5558,7 +5558,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &569430150
 MonoBehaviour:
@@ -12184,7 +12184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1281063152180352359, guid: fc5d881f5f67aa447ba7bddd3219678d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 19.77
+      value: 18.21
       objectReference: {fileID: 0}
     - target: {fileID: 1281063152180352359, guid: fc5d881f5f67aa447ba7bddd3219678d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13336,7 +13336,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1281063152180352359, guid: fc5d881f5f67aa447ba7bddd3219678d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 34.909
+      value: 37.91
       objectReference: {fileID: 0}
     - target: {fileID: 1281063152180352359, guid: fc5d881f5f67aa447ba7bddd3219678d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13344,7 +13344,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1281063152180352359, guid: fc5d881f5f67aa447ba7bddd3219678d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 24.677
+      value: 23.58
       objectReference: {fileID: 0}
     - target: {fileID: 1281063152180352359, guid: fc5d881f5f67aa447ba7bddd3219678d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -15342,7 +15342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7870888977386624900, guid: 1e3deb640bb45f4479abaf85a4495790, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.4
+      value: 2.69
       objectReference: {fileID: 0}
     - target: {fileID: 7870888977386624900, guid: 1e3deb640bb45f4479abaf85a4495790, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15383,6 +15383,10 @@ PrefabInstance:
     - target: {fileID: 7870888977386624904, guid: 1e3deb640bb45f4479abaf85a4495790, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7870888977386624905, guid: 1e3deb640bb45f4479abaf85a4495790, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e3deb640bb45f4479abaf85a4495790, type: 3}

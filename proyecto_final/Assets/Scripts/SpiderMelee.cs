@@ -17,12 +17,12 @@ public class SpiderMelee : MonoBehaviour
 
     public void ComportamientoEnemigo()
     {
-        if (Vector3.Distance(transform.position, target.transform.position) > 15) // si el jugador esta a una distancia mayor a 5 entonces hará las siguientes rutinas
+        if (Vector3.Distance(transform.position, target.transform.position) > 5) // si el jugador esta a una distancia mayor a 5 entonces hará las siguientes rutinas
         {
             tiempo += 1 * Time.deltaTime; // tiempo sumando tiempo
             if (tiempo >= 4) // if para cuando el tiempo llegue a 4
             {
-                rutina = Random.Range(0, 2); // rutinas "aleatorias"
+                rutina = Random.Range(0, 1); // rutinas "aleatorias"
                 tiempo = 0; // se resetea el tiempo
             }
             switch (rutina) // un switch para las rutinas
